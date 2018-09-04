@@ -1,4 +1,4 @@
-# SVM-parameter-tunning-Grid-Search-Cross-validation
+# SVM-parameter-tuning-Grid-Search-Cross-validation
 
 **SVM:**
 SVM draws a hyperplane to separate the classes.
@@ -20,7 +20,7 @@ For regression: Support Vector Regression (SVR), NuSVR and LinearSVR.
 For outliers detection: OneClassSVM. `estimator.fit` is only given `X_train`. like in an unsupervised model. Predict method sorts the new observations as inliers or outliers: `estimator.predict(X_test)`. 
 
 
-## Parameter Tunning for SVM:
+## Parameter Tuning for SVM:
 ### KERNEL:
 it must be one of linear, poly, rbf, sigmoid, precomputed or a callable. If none is given , rbf will be used. 
 **linear:** for linear models, use this.
@@ -34,7 +34,7 @@ Regularization is termed as C parameter in sklearn library. Smaller C misclassif
 The model is highly sensitive to gamma parameter. High gamma will cause overfitting.When the gamma is too low, model cannot capture the complexity of the data
 
 ### GRID SEARCH:
-Scikit-Learn's `GridSearchCV` is a one way to fine-tune model parameters. Grid Search evaluate all possible combinations of hyperparameter using cross-validation from the list of values you provided. The possible hyperparameters for SVC:
+Scikit-Learn's `GridSearchCV` is a one way to fine-tune model parameters. Grid Search evaluate all possible combinations of hyperparameter using cross-validation from the list of values you provided. 
 
 ## Cross-Validation: cv = Leave One Out: accuracy score 0.99
 
